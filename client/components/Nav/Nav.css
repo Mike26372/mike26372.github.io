@@ -1,0 +1,51 @@
+
+.title {
+    text-transform: none;
+    font-size: 1.5em;
+    transition-delay: .2s;
+    transition: all 1s;
+}
+
+.titleStart {
+    position: absolute;
+    margin: auto;
+    right: 0;
+}
+
+.navMenu {
+    padding: 0.5em;
+    /*text-align: center;*/
+    /*box-shadow: 0 1px 1px rgba(0,0,0, 0.10);*/
+    /*position: relative;*/
+    border-bottom: none;
+    z-index: 4;
+}
+
+
+.pure-menu.pure-menu-fixed {
+    /* Fixed menus normally have a border at the bottom. */
+    border-bottom: none;
+    /* I need a higher z-index here because of the scroll-over effect. */
+    z-index: 4;
+}
+
+.nav-menu .pure-menu-heading {
+    color: white;
+    font-weight: 400;
+    font-size: 120%;
+    text-transform: none;
+}
+
+.nav-menu .pure-menu-selected a {
+    color: white;
+}
+
+.nav-menu a {
+    color: #6FBEF3;
+}
+.nav-menu li a:hover,
+.nav-menu li a:focus {
+    background: none;
+    border: none;
+    color: #AECFE5;
+}
