@@ -1,17 +1,35 @@
+
+import { Component } from 'react';
+import { CSSTransitionGroup } from 'react-transition-group';
+
 import styles from './Nav.css';
 
-const Nav = () => {
-  
-  let menuStyle = `${styles.navMenu} pure-menu pure-menu-horizontal pure-menu-fixed`;
-  let titleStyle = `${styles.title} pure-menu-heading ${styles.titleStart}`;
-  return (
-    <div className="header">
-      <div className={menuStyle}>
-        
-        <a className={titleStyle} href="">michaeltutt.io</a>
+class Nav extends Component {
+  constructor() {
+    super();
+  }
+
+
+  render() {
+    let menuStyle = `${styles.navMenu} pure-menu pure-menu-horizontal pure-menu-fixed`;
+    let titleStyle = `${styles.title} pure-menu-heading`;
+    return (
+      <div className="header">
+        <div className={menuStyle}>
+          <CSSTransitionGroup
+          transitionAppear={true}
+          transitionAppearTimeout={1000}
+          transitionName = {
+            {appear: `${styles.titleAppear}`,
+             appearActive: `${styles.titleAppearActive}`}
+          }
+          >
+            <a className={titleStyle} href="">michaeltutt.io</a>
+          </CSSTransitionGroup>
+        </div>
       </div>
-    </div>
-  )
+    )
+  }
 }
 
 export default Nav;

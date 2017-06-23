@@ -1,22 +1,31 @@
 
 .title {
     text-transform: none;
+    /*transition-delay: .2s;*/
+    transition: all 1s ease-in;
+    /*font-size: 6em;*/
     font-size: 1.5em;
-    transition-delay: .2s;
-    transition: all 1s;
 }
 
-.titleStart {
+.titleAppear {
     position: absolute;
-    margin: auto;
-    right: 0;
+    /*margin: auto;*/
+    /*right: 0;*/
+    /*font-size: 6em;*/
+    transform: translate(calc(50vw), calc(25vh)) scale(3);
+}
+
+.titleAppearActive {
+    /*top: 1em;*/
+    /*left: 1em;*/
+    /*transform: scale(0.25);*/
+    /*font-size: 1.5em;*/
 }
 
 .navMenu {
+    display: flex;
     padding: 0.5em;
-    /*text-align: center;*/
-    /*box-shadow: 0 1px 1px rgba(0,0,0, 0.10);*/
-    /*position: relative;*/
+    position: relative;
     border-bottom: none;
     z-index: 4;
 }
