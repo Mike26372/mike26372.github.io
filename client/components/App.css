@@ -1,0 +1,18 @@
+:root {
+  --slate-background: #262626;
+  --whitish: #f5f5f5;
+  --light-grey: #dcdcdc;
+  --secondhand-grey: #3f3f3f;
+  --primary-font: 'Titillium Web', sans-serif;
+  --secondary-font: 'Open Sans', sans-serif;
+}
+
+body {
+  background-color: var(--slate-background);
+  height: 200vh;
+}
+
+body, div, input {
+  font-family: var(--secondary-font);
+  color: var(--whitish);
+}
