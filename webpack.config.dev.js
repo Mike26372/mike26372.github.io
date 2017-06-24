@@ -49,10 +49,6 @@ module.exports = {
         loader: 'style-loader!css-loader?modules&importLoaders=1&localIdentName=[name]---[local]---[hash:base64:5]!postcss-loader',
       }
     ]
-  },
-  resolve: {
-    extensions: ['.webpack.js', '.web.js', '.js', '.jsx'],
-    alias: {'react-grid-layout': path.join(__dirname, '/index-dev.js')}
   }
 };
 
