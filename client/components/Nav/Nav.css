@@ -1,60 +1,29 @@
 
 .title {
     text-transform: none;
-    /*transition-delay: .2s;*/
     transition: all 1s ease-in;
-    /*font-size: 6em;*/
     font-size: 1.5em;
+    color: var(--secondhand-grey);
 }
 
 .titleAppear {
     position: absolute;
-    /*margin: auto;*/
+    color: var(--whitish);
+    /*left: 50%;*/
     /*right: 0;*/
-    /*font-size: 6em;*/
-    transform: translate(calc(50vw), calc(25vh)) scale(3);
+    /*margin: auto;*/
+    /*transform: translate(calc(50vw), calc(25vh)) scale(3);*/
+    transform: translateX( calc( calc( 50vw ) - calc(50%) ) ) translateY( calc(25vh) ) scale(4);
+    /*transform: scale(3);*/
 }
 
 .titleAppearActive {
-    /*top: 1em;*/
-    /*left: 1em;*/
-    /*transform: scale(0.25);*/
-    /*font-size: 1.5em;*/
+    /*left: 50%;*/
 }
 
 .navMenu {
     display: flex;
     padding: 0.5em;
-    position: relative;
     border-bottom: none;
     z-index: 4;
-}
-
-
-.pure-menu.pure-menu-fixed {
-    /* Fixed menus normally have a border at the bottom. */
-    border-bottom: none;
-    /* I need a higher z-index here because of the scroll-over effect. */
-    z-index: 4;
-}
-
-.nav-menu .pure-menu-heading {
-    color: white;
-    font-weight: 400;
-    font-size: 120%;
-    text-transform: none;
-}
-
-.nav-menu .pure-menu-selected a {
-    color: white;
-}
-
-.nav-menu a {
-    color: #6FBEF3;
-}
-.nav-menu li a:hover,
-.nav-menu li a:focus {
-    background: none;
-    border: none;
-    color: #AECFE5;
 }

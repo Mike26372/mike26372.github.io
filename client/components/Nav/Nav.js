@@ -1,5 +1,5 @@
 
-import { Component } from 'react';
+import React, { Component } from 'react';
 import { CSSTransitionGroup } from 'react-transition-group';
 
 import styles from './Nav.css';
@@ -7,24 +7,32 @@ import styles from './Nav.css';
 class Nav extends Component {
   constructor() {
     super();
+
+    this.handleTransitionEnd = this.handleTransitionEnd.bind(this);
   }
 
+  componentDidMount() {
+    let title = this.title;
+    title.addEventListener('transitionend', this.handleTransitionEnd)
+  }
+
+  handleTransitionEnd(e) {
+    this.props.toggleShow();
+  }
 
   render() {
     let menuStyle = `${styles.navMenu} pure-menu pure-menu-horizontal pure-menu-fixed`;
     let titleStyle = `${styles.title} pure-menu-heading`;
+    let transitionClasses = {appear: `${styles.titleAppear}`, appearActive: `${styles.titleAppearActive}`}
+    
     return (
       <div className="header">
         <div className={menuStyle}>
           <CSSTransitionGroup
           transitionAppear={true}
           transitionAppearTimeout={1000}
-          transitionName = {
-            {appear: `${styles.titleAppear}`,
-             appearActive: `${styles.titleAppearActive}`}
-          }
-          >
-            <a className={titleStyle} href="">michaeltutt.io</a>
+          transitionName={ transitionClasses }>
+            <a className={titleStyle} href="" ref={c => this.title = c}>michaeltutt.io</a>
           </CSSTransitionGroup>
         </div>
       </div>
