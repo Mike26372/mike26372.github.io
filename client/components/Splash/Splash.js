@@ -1,15 +1,25 @@
-import { Component } from 'react'; 
+import React, { Component } from 'react'; 
+import { TweenMax } from 'gsap';
 import styles from './Splash.css';
-// import styles from './Splash.scss';
 
 class Splash extends Component {
   constructor() {
-    super()
+    super();
+  }
+
+  componentWillEnter(cb) {
+    const el = this.container;
+    TweenMax.fromTo(el, 0.3, {y: 100, opacity: 0}, {y: 0, opacity: 1, onComplete: cb});
+  }
+
+  componentWillLeave(cb) {
+    const el = this.container;
+    TweenMax.fromTo(el, 0.3, {y: 0, opacity: 1}, {y: -100, opacity: 0, onComplete: cb});
   }
 
   render() {
     return (
-      <div className={styles.splashContainer}>
+      <div className={styles.container} ref={c => this.container = c}>
           <div className={styles.splash}>
               <h1 className={styles.splashHead}>hello</h1>
               <p className={styles.splashSubhead}>
