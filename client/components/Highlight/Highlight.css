@@ -1,0 +1,20 @@
+.title {
+  font-family: var(--primary-font);
+  font-size: 2.5em;
+  height: 33%;
+  vertical-align: middle;
+  border: 1px solid blue;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.text {
+  padding: 0 1em;
+  height: 67%;
+  font-weight: 300;
+}
+
+.row {
+  height: 50%;
+  border: 1px solid goldenrod;
+}
