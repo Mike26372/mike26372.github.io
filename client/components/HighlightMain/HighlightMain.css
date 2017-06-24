@@ -1,0 +1,17 @@
+.row {
+  height: 50%;
+  border: 1px solid goldenrod;
+}
+
+.largeText {
+  text-align: left;
+  font-size: 4em;
+  font-family: var(--primary-font); 
+  font-style: italic;
+}
+
+.smallText {
+  text-align: left;
+  font-size: 2em;
+  font-weight: 200;
+}
