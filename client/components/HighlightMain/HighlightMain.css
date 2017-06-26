@@ -1,13 +1,15 @@
 .row {
-  height: 50%;
-  border: 1px solid goldenrod;
+  /*height: 50%;*/
+  /*border: 1px solid goldenrod;*/
 }
 
 .largeText {
-  text-align: left;
   font-size: 4em;
-  font-family: var(--primary-font); 
   font-style: italic;
+  font-family: var(--primary-font); 
+  margin-bottom: 0;
+  margin-top: 2em;
+  text-align: center;
 }
 
 .smallText {
