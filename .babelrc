@@ -16,7 +16,14 @@
           }]
         }],
         ["transform-react-inline-elements"],
-        ["transform-react-inline-elements"]
+        ["transform-react-inline-elements"],
+        ["inline-react-svg", {
+                "svgo": {
+                  "plugins": [
+                    { "removeAttrs": { "attrs": "(data-name)" } },
+                    { "cleanupIds": true }
+                  ]}
+              }]
       ]
     },
     "production": {
