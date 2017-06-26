@@ -1,0 +1,14 @@
+.largeText {
+  font-size: 4em;
+  font-style: italic;
+  font-family: var(--primary-font); 
+  margin-bottom: 1em;
+  margin-top: 2em;
+  text-align: center;
+}
+
+.smallText {
+  text-align: left;
+  font-size: 2em;
+  font-weight: 200;
+}
