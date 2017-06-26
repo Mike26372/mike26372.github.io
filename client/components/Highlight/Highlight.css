@@ -17,7 +17,18 @@
   line-height: 2em;
 }
 
+.icon {
+  max-width: 200px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .row {
   /*height: 50%;*/
   border: 1px solid goldenrod;
+  /*margin: auto;*/
+}
+
+.row > * {
+  margin: auto;
 }

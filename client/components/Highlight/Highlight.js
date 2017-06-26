@@ -1,4 +1,7 @@
+import React from 'react';
+
 import styles from './Highlight.css';
+import svgMapping from './svgMapping.js';
 
 const Highlight = (props) => {
   let { title, text, icon } = props;
@@ -7,6 +10,9 @@ const Highlight = (props) => {
 
   return (
     <div className={ highlightRow }>
+      <div className= { styles.icon }>
+        {React.createElement(svgMapping[icon])}
+      </div>
       <h3 className={ styles.title }>
         { title }
       </h3>
