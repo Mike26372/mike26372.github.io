@@ -47,6 +47,21 @@ module.exports = {
       {
         test: /\.css$/,
         loader: 'style-loader!css-loader?modules&importLoaders=1&localIdentName=[name]---[local]---[hash:base64:5]!postcss-loader',
+      },
+      // SVG
+      {
+        test: /\.svg$/,
+        loaders: [ 'babel-loader',
+          {
+            loader: 'react-svg-loader',
+            query: {
+              svgo: {
+                plugins: [{removeTitle: false}],
+                floatPrecision: 2
+              }
+            }
+          }
+        ]
       }
     ]
   }
