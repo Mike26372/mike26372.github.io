@@ -8,6 +8,8 @@ import Nav from './Nav/Nav.js';
 import Splash from './Splash/Splash.js';
 import Content from './Content/Content.js';
 import About from './About/About.js';
+import Traits from './Traits/Traits.js';
+import Tech from './Tech/Tech.js';
 
 var windows = [
   <Splash key={0}/>,
@@ -76,6 +78,8 @@ class App extends Component {
         <Nav show={show} toggleShow={this.toggleShow}/>
         <Splash show={show} />
         <About show={show} />
+        <Traits show={show} />
+        <Tech show={show} />
       </div>
     )
   }
