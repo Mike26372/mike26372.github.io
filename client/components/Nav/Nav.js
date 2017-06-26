@@ -13,7 +13,12 @@ class Nav extends Component {
 
   componentDidMount() {
     let title = this.title;
-    title.addEventListener('transitionend', this.handleTransitionEnd)
+    // title.addEventListener('transitionend', this.handleTransitionEnd)
+    setTimeout(this.handleTransitionEnd, 500);
+  }
+
+  componentWillUnmount() {
+    // title.removeEventListener('transitionend', this.handleTransitionEnd);
   }
 
   handleTransitionEnd(e) {
@@ -28,12 +33,7 @@ class Nav extends Component {
     return (
       <div className="header">
         <div className={menuStyle}>
-          <CSSTransitionGroup
-          transitionAppear={true}
-          transitionAppearTimeout={1000}
-          transitionName={ transitionClasses }>
-            <a className={titleStyle} href="" ref={c => this.title = c}>michaeltutt.io</a>
-          </CSSTransitionGroup>
+          
         </div>
       </div>
     )
@@ -47,3 +47,10 @@ export default Nav;
 //     <li className="pure-menu-item"><a href="#" className="pure-menu-link"></a></li>
 //     <li className="pure-menu-item"><a href="#" className="pure-menu-link"></a></li>
 // </ul>
+
+// <CSSTransitionGroup
+// transitionAppear={true}
+// transitionAppearTimeout={1000}
+// transitionName={ transitionClasses }>
+//   <a className={titleStyle} href="" ref={c => this.title = c}>michaeltutt.io</a>
+// </CSSTransitionGroup>
