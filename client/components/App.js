@@ -74,12 +74,15 @@ class App extends Component {
     return (
       <div>
         <Nav show={show} toggleShow={this.toggleShow}/>
-        <TransitionGroupPlus transitionMode="out-in">
-          {show ? windows[index] : ''}
-        </TransitionGroupPlus>
+        <Splash show={show} />
+        <About show={show} />
       </div>
     )
   }
 }
 
 export default App;
+
+// <TransitionGroupPlus transitionMode="out-in">
+//   {show ? windows[index] : ''}
+// </TransitionGroupPlus>
