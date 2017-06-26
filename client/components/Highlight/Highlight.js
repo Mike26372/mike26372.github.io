@@ -2,7 +2,7 @@ import styles from './Highlight.css';
 
 const Highlight = (props) => {
   let { title, text, icon } = props;
-  let highlightRow = `pure-u-1 pure-u-md-1-3 ${styles.row}`;
+  let highlightRow = `pure-u-1 pure-u-md-1-2 ${styles.row}`;
 
 
   return (

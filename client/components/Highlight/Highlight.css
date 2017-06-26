@@ -1,7 +1,7 @@
 .title {
   font-family: var(--primary-font);
-  font-size: 2.5em;
-  height: 33%;
+  font-size: 2em;
+  /*height: 33%;*/
   vertical-align: middle;
   border: 1px solid blue;
   font-weight: 300;
@@ -9,12 +9,15 @@
 }
 
 .text {
+  margin: 3em 0;
   padding: 0 1em;
-  height: 67%;
-  font-weight: 300;
+  font-weight: 100;
+  font-size: 1.2em;
+  text-align: center;
+  line-height: 2em;
 }
 
 .row {
-  height: 50%;
+  /*height: 50%;*/
   border: 1px solid goldenrod;
 }
