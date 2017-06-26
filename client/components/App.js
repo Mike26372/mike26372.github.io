@@ -11,11 +11,6 @@ import About from './About/About.js';
 import Traits from './Traits/Traits.js';
 import Tech from './Tech/Tech.js';
 
-var windows = [
-  <Splash key={0}/>,
-  <About key={1}/>
-]
-
 class App extends Component {
   constructor() {
     super();
