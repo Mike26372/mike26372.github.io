@@ -2,9 +2,8 @@ import React, { Component } from 'react';
 import { TweenMax } from 'gsap';
 
 import styles from './About.css';
-import highlights from '../Highlight/highlights.js';
 import HighlightMain from '../HighlightMain/HighlightMain.js';
-import Highlight from '../Highlight/Highlight.js';
+import HighlightSub from '../HighlightSub/HighlightSub.js';
 
 class About extends Component {
   constructor() {
@@ -23,14 +22,14 @@ class About extends Component {
 
   render() {
 
-    let gridStyle = `pure-g ${styles.rows}`;
+    let rowsStyle = `pure-g ${styles.rows}`;
 
     return (
       <div className={styles.container} ref={ c => this.container = c }>
         <div className={styles.content}>
-          <div className={gridStyle}>
+          <div className={rowsStyle}>
             <HighlightMain />
-            {highlights.map(hl => <Highlight title={hl.title} text={hl.text} icon={hl.icon} />)}
+            <HighlightSub />
           </div>
         </div>
       </div>
