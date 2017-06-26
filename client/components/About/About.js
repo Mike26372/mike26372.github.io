@@ -29,7 +29,6 @@ class About extends Component {
         <div className={styles.content}>
           <div className={rowsStyle}>
             <HighlightMain />
-            <HighlightSub />
           </div>
         </div>
       </div>

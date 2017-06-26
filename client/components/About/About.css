@@ -21,10 +21,8 @@
 
 .rows {
   border: 1px solid red;
-  /*height: 300px;*/
 }
 
 .row {
-  /*height: 50%;*/
   border: 1px solid goldenrod;
 }
