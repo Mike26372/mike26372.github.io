@@ -3,11 +3,12 @@
   color: var(--slate);
   z-index: 1; 
   opacity: 1;
-  width: 100vw;
+  /*width: 100vw;*/
   display: flex;
   border: 1px solid var(--whitish);
   flex-direction: column;
   background-color: var(--whitish);
+  padding: 100px 0;
 }
 
 .content {
@@ -20,9 +21,9 @@
 }
 
 .rows {
-  border: 1px solid red;
+  /*border: 1px solid red;*/
 }
 
 .row {
-  border: 1px solid goldenrod;
+  /*border: 1px solid goldenrod;*/
 }
