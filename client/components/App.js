@@ -10,6 +10,8 @@ import Content from './Content/Content.js';
 import About from './About/About.js';
 import Traits from './Traits/Traits.js';
 import Tech from './Tech/Tech.js';
+import Projects from './Projects/Projects.js';
+import Info from './Info/Info.js';
 
 class App extends Component {
   constructor() {
@@ -75,6 +77,8 @@ class App extends Component {
         <About show={show} />
         <Traits show={show} />
         <Tech show={show} />
+        <Projects show={show} />
+        <Info show={show} />
       </div>
     )
   }
