@@ -32,14 +32,14 @@ class Splash extends Component {
 
   render() {
     return (
-      <div className={styles.container} ref={c => this.container = c}>
+      <section className={styles.container} ref={c => this.container = c}>
           <div className={styles.splash}>
               <h1 className={styles.splashHead}>michaeltutt.io</h1>
               <p className={styles.splashSubhead}>
                 scroll down or just <a className={styles.resume} href="">view my resume</a>
               </p>
           </div>
-      </div>
+      </section>
     );
   }
 }

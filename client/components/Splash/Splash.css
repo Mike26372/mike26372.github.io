@@ -3,8 +3,8 @@ body, div, input {
 }
 
 .container {
-  border: 1px solid red;
-  width: 100vw;
+  /*border: 1px solid red;*/
+  /*width: 100vw;*/
   height: 100vh;
   opacity: 0;
   display: flex;
@@ -22,7 +22,7 @@ body, div, input {
 
 .splashHead {
   font-family: var(--primary-font);
-  font-size: 10vw;
+  font-size: 12vw;
   font-weight: 300;
   color: white;
   border-radius: 5px;
