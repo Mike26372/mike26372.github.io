@@ -1,7 +1,7 @@
 import React from 'react';
 
 import styles from './Highlight.css';
-import svgMapping from './svgMapping.js';
+import svgMapping from '../SVGs/svgMapping.js';
 
 const Highlight = (props) => {
   let { title, text, icon } = props;
