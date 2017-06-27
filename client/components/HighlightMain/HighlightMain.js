@@ -1,6 +1,6 @@
 import styles from './HighlightMain.css';
 
-import ComputerSVG from '../ComputerSVG/ComputerSVG.js';
+import FullStackSVG from '../SVGs/FullStackSVG/FullStackSVG.js';
 
 
 const HighlightMain = (props) => {
@@ -14,7 +14,7 @@ const HighlightMain = (props) => {
         <h2 className={ styles.largeText }>a bit about me...</h2>
       </div>
       <div className={ row2Column }>
-        <ComputerSVG />
+        <FullStackSVG />
       </div>
       <div className={ row1Column }>
         <p className={ styles.smallText }>I'm Michael Tutt, a full-stack software engineer living in Northern California. </p>
