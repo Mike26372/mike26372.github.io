@@ -3,7 +3,7 @@
   font-style: italic;
   font-family: var(--primary-font); 
   margin-bottom: 1em;
-  margin-top: 2em;
+  /*margin-top: 2em;*/
   text-align: center;
 }
 
