@@ -31,11 +31,11 @@ class Nav extends Component {
     let transitionClasses = {appear: `${styles.titleAppear}`, appearActive: `${styles.titleAppearActive}`}
     
     return (
-      <div className="header">
+      <header className="header">
         <div className={menuStyle}>
           
         </div>
-      </div>
+      </header>
     )
   }
 }
