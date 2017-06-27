@@ -1,6 +1,10 @@
 var path = require('path');
 var webpack = require('webpack');
 var CompressionPlugin = require('compression-webpack-plugin');
+var postCSSConfig = require('./postcss.config.js');
+var postcssImport = require('postcss-import');
+var autoprefixer = require('autoprefixer');
+
 
 module.exports = {
   entry: [
@@ -29,7 +33,10 @@ module.exports = {
       test: /\.js$|\.css$|\.html$/,
       threshold: 0,
       minRatio: 0.8
-    })
+    }),
+    new webpack.ProvidePlugin({
+      'React': 'react',
+    }),
   ],
   module: {
     loaders: [
