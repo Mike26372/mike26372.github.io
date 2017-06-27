@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { TweenMax } from 'gsap';
 
 import styles from './Tech.css';
+import technologies from './technologies.js';
 
 class Tech extends Component {
   constructor() {
@@ -25,15 +26,16 @@ class Tech extends Component {
     let titleStyle = `${styles.largeText}`;
 
     return (
-      <div className={styles.container} ref={ c => this.container = c }>
+      <section className={styles.container} ref={ c => this.container = c }>
         <div className={styles.content}>
           <div className={rowsStyle}>
             <div className={rowStyle}>
               <h2 className={titleStyle}>tech I enjoy using...</h2>
             </div>
+
           </div>
         </div>
-      </div>
+      </section>
     );
   }
 }

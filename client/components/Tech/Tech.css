@@ -3,7 +3,7 @@
   color: var(--slate);
   z-index: 1; 
   opacity: 1;
-  width: 100vw;
+  /*width: 100vw;*/
   display: flex;
   flex-direction: column;
   background-color: var(--whitish);
