@@ -24,13 +24,13 @@ class Traits extends Component {
     let rowsStyle = `pure-g ${styles.rows}`;
 
     return (
-      <div className={styles.container} ref={ c => this.container = c }>
+      <section className={styles.container} ref={ c => this.container = c }>
         <div className={styles.content}>
           <div className={rowsStyle}>
             <HighlightSub />
           </div>
         </div>
-      </div>
+      </section>
     );
   }
 }
