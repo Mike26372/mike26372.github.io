@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 
-import styles from './DesignSVG.css';
+import svgStyles from '../SvgStyles.css';
 
 const DesignSVG = (props) => {
 
-  let svgStyle = `pure-u-1 ${styles.container}`;
+  let svgStyle = `pure-u-1 ${svgStyles.medium}`;
   return (
     <div className={svgStyle}>
       <svg width="100%" height="100%" viewBox="0 0 1280 800" version="1.1" 

@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 
-import styles from './LightbulbSVG.css';
+import svgStyles from '../SvgStyles.css';
+
 
 const LightbulbSVG = (props) => {
 
-  let svgStyle = `pure-u-1 ${styles.container}`;
+  let svgStyle = `pure-u-1 ${svgStyles.medium}`;
   return (
     <div className={svgStyle}>
       <svg height="100%" style={{"fillRule":"evenodd","clipRule":"evenodd","strokeLinecap":"round","strokeLinejoin":"round","strokeMiterlimit":"1.5"}} width="100%" version="1.1" viewBox="0 0 1280 800" xmlSpace="preserve">

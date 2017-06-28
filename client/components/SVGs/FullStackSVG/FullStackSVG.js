@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 
-import styles from './FullStackSVG.css';
+import svgStyles from '../SvgStyles.css';
 
 const FullStackSVG = (props) => {
 
-  let svgStyle = `pure-u-1 ${styles.container}`;
-  let blinkAnimation = `${styles.blink}`
+  let svgStyle = `pure-u-1 ${svgStyles.large}`;
+  let blinkAnimation = `${svgStyles.blink}`
   return (
     <div className={svgStyle}>
       <svg height="100%" style={{"fillRule":"evenodd","clipRule":"evenodd","strokeLinecap":"square","strokeMiterlimit":"1.5"}} width="100%" version="1.1" viewBox="0 0 1280 800" xmlSpace="preserve">
