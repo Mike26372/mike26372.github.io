@@ -3,6 +3,7 @@ import { TweenMax } from 'gsap';
 
 import styles from './Tech.css';
 import technologies from './technologies.js';
+import TechSub from '../TechSub/TechSub.js';
 
 class Tech extends Component {
   constructor() {
@@ -32,7 +33,9 @@ class Tech extends Component {
             <div className={rowStyle}>
               <h2 className={titleStyle}>tech I enjoy using...</h2>
             </div>
-
+            {technologies.map(tech => {
+              return React.createElement(TechSub, {...tech});
+            })}
           </div>
         </div>
       </section>
