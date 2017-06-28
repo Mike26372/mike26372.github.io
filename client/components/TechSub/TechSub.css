@@ -1,0 +1,30 @@
+.row {
+  /*border: 1px solid goldenrod;*/
+  /*width: 100%;*/
+  padding: 1em 0;
+}
+
+.title {
+  font-family: var(--primary-font);
+  font-size: 1.5em;
+  font-weight: 300;
+}
+
+.sub {
+  padding-top: .5em;
+  font-size: .9em;
+}
+
+.subItem {
+  display: inline-block;
+}
+
+.subItem:after {
+  content: '\25C6';
+  padding: 0 .2em;
+}
+
+.subItem:last-child:after {
+  content: none;
+}
+
