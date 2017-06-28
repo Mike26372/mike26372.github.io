@@ -11,7 +11,7 @@ const HighlightSub = (props) => {
   return (
     <div>
       <div className={titleStyle}> 
-        <h2 className={styles.largeText}>some highlights...</h2>
+        <h2 className={styles.largeText}>how I work...</h2>
       </div>
       {highlights.map(hl => <Highlight title={hl.title} text={hl.text} icon={hl.icon} />)}
     </div>
