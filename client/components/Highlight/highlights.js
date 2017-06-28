@@ -1,8 +1,8 @@
 var highlights = [
-  {title: "Optimization Obsession", text: "Concise, semantic code is a way of life. Constantly utilizing modern front-end tools / best-practices to make user experience second to none", icon: 'Spedometer'},
-  {title: "Creative Problem Solver", text: "Love for discovering new tools used to conquer unique problems, and I'll work tirelessly to solve them", icon: 'Lightbulb'},
-  {title: "JavaScript Ninja", text: "Significant experience with both modern front-end frameworks (React, Angular, etc.) with server-side MVC frameworks (Node / Express)", icon: 'Computer'},
-  {title: "Design Focused", text: "Utilizing prime organization skills and substantial attention to detail, I strive to make sure every pixel is in order", icon: 'Design'},
+  {title: "Optimization Obsession", text: "Concise, semantic and modular code is not merely a best practice, but a way of life ", icon: 'Spedometer'},
+  {title: "Creative Problem Solver", text: "Ability to conceptualize an intricate paradigm comes naturally to me; the more complex, the more exciting", icon: 'Lightbulb'},
+  {title: "Expeditious Learner", text: "Excited by the opportunity to learn new tools and can get up to speed quickly", icon: 'Brain'},
+  {title: "Design Focused", text: "Attention to detail second to none", icon: 'Design'},
 ];
 
 export default highlights; 
