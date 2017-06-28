@@ -1,7 +1,6 @@
 .title {
   font-family: var(--primary-font);
   font-size: 2em;
-  /*height: 33%;*/
   vertical-align: middle;
   /*border: 1px solid blue;*/
   font-weight: 300;
@@ -9,8 +8,8 @@
 }
 
 .text {
-  margin: 3em 0;
-  padding: 0 1em;
+  margin-bottom: 1em;
+  padding: 1em 1em;
   font-weight: 100;
   font-size: 1.2em;
   text-align: center;
@@ -24,7 +23,6 @@
 }
 
 .row {
-  /*height: 50%;*/
   /*border: 1px solid goldenrod;*/
   /*margin: auto;*/
 }
