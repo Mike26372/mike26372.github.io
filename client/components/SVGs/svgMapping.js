@@ -9,6 +9,7 @@ import BackEnd from './BackEndSVG/BackEndSVG.js';
 import Language from './LanguageSVG/LanguageSVG.js';
 import Database from './DatabaseSVG/DatabaseSVG.js';
 import Tool from './ToolSVG/ToolSVG.js';
+import Brain from './BrainSVG/BrainSVG.js';
 
 
 const svgMapping = {
@@ -21,7 +22,8 @@ const svgMapping = {
   'BackEnd': BackEnd,
   'Language': Language,
   'Database': Database,
-  'Tool': Tool
+  'Tool': Tool,
+  'Brain': Brain,
 };
 
 export default svgMapping;
