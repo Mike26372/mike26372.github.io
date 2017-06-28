@@ -13,7 +13,7 @@ const HighlightMain = (props) => {
       <div className={ row2Column }>
         <h2 className={ styles.largeText }>a bit about me...</h2>
       </div>
-      <div className={ row2Column }>
+      <div className={ styles.icon }>
         <FullStackSVG />
       </div>
       <div className={ row1Column }>
