@@ -1,0 +1,31 @@
+.container {
+  max-width: 700px
+}
+
+.large {
+  max-width: 700px;
+}
+
+.medium {
+  max-width: 500px;
+}
+
+.small {
+  max-width: 100px;
+}
+
+.blink {
+  animation-name: blink;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: step-end;
+}
+
+@keyframes blink {
+  from, to {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
