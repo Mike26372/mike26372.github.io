@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import TransitionGroupPlus from 'react-transition-group-plus';
+import FontAwesomeWebpack from 'font-awesome-webpack';
+import PureCSS from 'purecss';
 
 import styles from './App.css';
 
