@@ -3,7 +3,7 @@ import svgStyles from '../SvgStyles.css';
 
 const BrainSVG = (props) => {
 
-  let svgStyle = `pure-u-1 ${svgStyles.small}`;
+  let svgStyle = `pure-u-1 ${svgStyles.medium}`;
 
   return (
     <div className={svgStyle}>
