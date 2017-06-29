@@ -57,7 +57,7 @@ module.exports = {
       // CSS
       {
         test: /\.css$/,
-        loader: 'style-loader!css-loader?modules&localIdentName=[name]---[local]---[hash:base64:5]'
+        loader: 'style-loader!css-loader?modules&importLoaders=1&localIdentName=[name]---[local]---[hash:base64:5]!postcss-loader'
       },
       // Font-Awesome
       { 
