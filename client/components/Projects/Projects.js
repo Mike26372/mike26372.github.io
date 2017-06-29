@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 import { TweenMax } from 'gsap';
 
-import styles from './Projects.css';
+import styles from '../../stylesheets/sectionStyles.css';
+
+import projectInfo from './projectInfo.js';
+import ProjectSub from '../ProjectSub/ProjectSub.js';
 
 class Projects extends Component {
   constructor() {
@@ -20,17 +23,19 @@ class Projects extends Component {
 
   render() {
 
+    let containerStyle = `${styles.container} ${styles.lightBackground}`
     let rowsStyle = `pure-g ${styles.rows}`;
     let rowStyle = `pure-u-1 ${styles.row}`;
     let titleStyle = `${styles.largeText}`;
 
     return (
-      <section className={styles.container} ref={ c => this.container = c }>
+      <section className={containerStyle} ref={ c => this.container = c }>
         <div className={styles.content}>
           <div className={rowsStyle}>
             <div className={rowStyle}>
               <h2 className={titleStyle}>past projects...</h2>
             </div>
+            {projectInfo.map(project => React.createElement(ProjectSub, {...project}))}
           </div>
         </div>
       </section>
