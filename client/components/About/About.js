@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { TweenMax } from 'gsap';
 
-import styles from './About.css';
+import styles from '../../stylesheets/sectionStyles.css';
+
 import HighlightMain from '../HighlightMain/HighlightMain.js';
 import HighlightSub from '../HighlightSub/HighlightSub.js';
 
@@ -22,10 +23,11 @@ class About extends Component {
 
   render() {
 
+    let containerStyle = `${styles.container} ${styles.whiteBackground}`;
     let rowsStyle = `pure-g ${styles.rows}`;
 
     return (
-      <section className={styles.container} ref={ c => this.container = c }>
+      <section className={containerStyle} ref={ c => this.container = c }>
         <div className={styles.content}>
           <div className={rowsStyle}>
             <HighlightMain />
