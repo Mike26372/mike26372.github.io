@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import { TweenMax } from 'gsap';
 
-import styles from './Tech.css';
+// import styles from './Tech.css';
+import styles from '../../stylesheets/sectionStyles.css';
+
 import technologies from './technologies.js';
 import TechSub from '../TechSub/TechSub.js';
 
@@ -22,12 +24,13 @@ class Tech extends Component {
 
   render() {
 
+    let containerStyle = `${styles.container} ${styles.whiteBackground}`
     let rowsStyle = `pure-g ${styles.rows}`;
     let rowStyle = `pure-u-1 ${styles.row}`;
     let titleStyle = `${styles.largeText}`;
 
     return (
-      <section className={styles.container} ref={ c => this.container = c }>
+      <section className={containerStyle} ref={ c => this.container = c }>
         <div className={styles.content}>
           <div className={rowsStyle}>
             <div className={rowStyle}>
