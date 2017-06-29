@@ -34,6 +34,14 @@ module.exports = {
       threshold: 0,
       minRatio: 0.8
     }),
+    new webpack.LoaderOptionsPlugin({
+      test: /\.css$/,
+      options: {
+        postcss: function() {
+          return postCSSConfig;
+        }
+      }
+    }),
     new webpack.ProvidePlugin({
       'React': 'react',
     }),
