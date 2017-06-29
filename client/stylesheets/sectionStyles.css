@@ -1,10 +1,15 @@
 .container {
-  z-index: 1; 
+  /*z-index: 1; */
   opacity: 1;
-  display: flex;
-  flex-direction: column;
+  /*display: flex;*/
+  /*flex-direction: column;*/
   padding: 2em 0;
   width: 100%;
+  /*min-height: 1200px;*/
+  /*height: 100%;*/
+  /*height: 1000px;*/
+  /*max-width: 1200px;*/
+  /*position: relative;*/
 }
 
 .whiteBackground {
@@ -27,19 +32,28 @@
 }
 
 .content {
+  /*position: absolute;*/
+  /*height: 100%;*/
   width: 90%;
-  display: flex;
-  flex: 0 1 100%;
+  /*display: flex;*/
+  /*flex: 1 1 100%;*/
   margin: auto;
   text-align: center;
+  max-width: 900px;
 }
 
 .rows {
   width: 100%;
+  /*display: flex;*/
+  justify-content: center;
+  /*flex: 1 1 100%;*/
 }
 
 .row {
   /*width: 100%;*/
+  /*display: flex;*/
+  /*flex: 1 1 100%;*/
+  justify-content: center;
 }
 
 .goldBorder {
@@ -52,6 +66,7 @@
   font-style: italic;
   margin-bottom: 1em;
   text-align: center;
+
 }
 
 .smallText {
