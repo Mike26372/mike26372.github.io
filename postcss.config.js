@@ -1,11 +1,11 @@
 var postCSSConfig = [
 /* autoprefix for different browser vendors */
-  require('autoprefixer')({
-    browsers: [
-      '> 1%',
-      'last 2 versions'
-    ]
-  }),
+  // require('autoprefixer')({
+  //   browsers: [
+  //     '> 1%',
+  //     'last 2 versions'
+  //   ]
+  // }),
   /* reset inherited rules */
   require('postcss-initial')({
     reset: 'inherited' // reset only inherited rules
@@ -30,7 +30,9 @@ var postCSSConfig = [
   /* PostCSS plugin for making calculations with math.js  */
   require('postcss-math'),
   /* transform W3C CSS color function to more compatible CSS. */
-  require('postcss-color-function')
+  require('postcss-color-function'),
+  require('postcss-cssnext')()
+
 ];
 
 // Export the PostCSS Config for usage in webpack
