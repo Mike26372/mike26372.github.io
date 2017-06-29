@@ -50,6 +50,7 @@
     "eslint-plugin-babel": "^3.2.0",
     "eslint-plugin-react": "^5.0.1",
     "express": "^4.15.3",
+    "extract-text-webpack-plugin": "^2.1.2",
     "file-loader": "^0.11.2",
     "font-awesome": "^4.7.0",
     "font-awesome-webpack": "0.0.5-beta.2",
@@ -59,6 +60,7 @@
     "morgan": "^1.8.2",
     "node-sass": "^4.5.3",
     "path": "^0.12.7",
+    "postcss-cssnext": "^2.11.0",
     "postcss-smart-import": "^0.6.9",
     "precss": "^1.4.0",
     "purecss": "^1.0.0",
@@ -87,6 +89,7 @@
   "devDependencies": {
     "autoprefixer": "^6.7.6",
     "babel-jest": "^19.0.0",
+    "babel-plugin-add-module-exports": "^0.2.1",
     "babel-plugin-transform-react-constant-elements": "^6.23.0",
     "babel-plugin-transform-react-inline-elements": "^6.22.0",
     "postcss-color-function": "^3.0.0",
