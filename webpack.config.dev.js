@@ -22,14 +22,14 @@ module.exports = {
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoEmitOnErrorsPlugin(),
-    new webpack.LoaderOptionsPlugin({
-      test: /\.css$/,
-      options: {
-        postcss: () => {
-          return postCSSConfig;
-        }
-      }
-    }),
+    // new webpack.LoaderOptionsPlugin({
+    //   test: /\.css$/,
+    //   options: {
+    //     postcss: () => {
+    //       return postCSSConfig;
+    //     }
+    //   }
+    // }),
     new CompressionPlugin({
       asset: '[path].gz[query]',
       algorithm: 'gzip',
@@ -37,7 +37,11 @@ module.exports = {
       threshold: 0,
       minRatio: 0.8
     }),
-    // new ExtractTextPlugin('application.css')
+    new ExtractTextPlugin({
+      filename: 'bundle.css',
+      disable: false,
+      allChunks: true
+    })
 
   ],
   module: {
@@ -49,25 +53,52 @@ module.exports = {
         include: path.join(__dirname, 'client')
       },
       // CSS
+      // ***********WORKING VERSION****************
+      // {
+      //   test: /\.css$/,
+      //   use: [
+      //     'style-loader',
+      //     { 
+      //       loader: 'css-loader', 
+      //       options: { 
+      //         modules: true, 
+      //         importLoaders: 1,
+      //         localIdentName: '[name]---[local]---[hash:base64:5]' 
+      //       } 
+      //     },
+      //     { 
+      //       loader: 'postcss-loader', 
+      //       options: {
+      //         plugins: (loader) => postCSSConfig
+      //       } 
+      //     }
+      //   ],
+        // ******************* WEBPACK 1 VERSION *******
+        // loader: 'style-loader!css-loader?modules&importLoaders=1&localIdentName=[name]---[local]---[hash:base64:5]!postcss-loader',
+        // ******************* TEST VERSION **********
       {
         test: /\.css$/,
-        // use: [
-        //   'style-loader',
-        //   { loader: 'css-loader', options: { modules: true, importLoaders: 1 } },
-        //   { 
-        //     loader: 'postcss-loader', 
-        //     options: {
-        //       plugins: (loader) => [
-        //         require('postcss-import')({ root: loader.resourcePath }),
-        //         // require('postcss-cssnext')(),
-        //         require('autoprefixer')(),
-        //         // require('cssnano')()
-        //       ]
-        //     } 
-        //   }
-        // ]
-        loader: 'style-loader!css-loader?modules&importLoaders=1&localIdentName=[name]---[local]---[hash:base64:5]!postcss-loader',
-        // loader: ExtractTextPlugin.extract(['style-loader', 'css-loader?modules&importLoaders=1', 'postcss-loader'])
+        use: ExtractTextPlugin.extract({
+          fallback: 'style-loader',
+          use: [
+            // 'style-loader',
+            { 
+              loader: 'css-loader', 
+              options: { 
+                modules: true, 
+                importLoaders: 1,
+                localIdentName: '[name]---[local]---[hash:base64:5]' 
+              } 
+            },
+            { 
+              loader: 'postcss-loader', 
+              options: {
+                plugins: (loader) => postCSSConfig
+              } 
+            }
+          ],
+          publicPath: '/dist'
+        }) 
       },
       // Font-Awesome
       { 
@@ -80,8 +111,5 @@ module.exports = {
       }
     ]
   },
-  // postcss: function() {
-  //   return postCSSConfig;
-  // },
 };
 
