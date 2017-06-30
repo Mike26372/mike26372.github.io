@@ -40,13 +40,13 @@
 }
 
 .fontawesome {
-  font-size: 3em;
+  font-size: 3em !important;
   text-decoration: none;
   color: var(--whitish);
 }
 
 .fontawesome:before {
-  font-size: 3em;
+  /*font-size: 3em;*/
 }
 
 .fontawesome:hover {

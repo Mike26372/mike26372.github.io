@@ -1,4 +1,5 @@
 import styles from './HighlightSub.css';
+import PureGrid from '../../../node_modules/purecss/build/grids-responsive-min.css';
 
 import highlights from '../Highlight/highlights.js';
 import Highlight from '../Highlight/Highlight.js';
@@ -6,7 +7,7 @@ import Highlight from '../Highlight/Highlight.js';
 
 const HighlightSub = (props) => {
 
-  let titleStyle = `pure-u-1`;
+  let titleStyle = `${PureGrid['pure-u-1']}`;
 
   return (
     <div>

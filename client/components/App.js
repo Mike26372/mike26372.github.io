@@ -2,7 +2,10 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import TransitionGroupPlus from 'react-transition-group-plus';
 import FontAwesomeWebpack from 'font-awesome-webpack';
-import PureCSS from 'purecss';
+// import PureCSS from 'purecss';
+// import PureMin from '../../node_modules/purecss/build/pure-min.css';
+// import PureGridMin from '../../node_modules/purecss/build/grids-min.css';
+// import PureGridResponsiveMin from '../../node_modules/purecss/build/grids-responsive-min.css';
 
 import styles from './App.css';
 

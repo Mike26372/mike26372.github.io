@@ -1,16 +1,17 @@
 import styles from './HighlightMain.css';
 
 import FullStackSVG from '../SVGs/FullStackSVG/FullStackSVG.js';
+import PureGrid from '../../../node_modules/purecss/build/grids-responsive-min.css';
 
 
 const HighlightMain = (props) => {
 
-  let row1Column = `pure-u-1 ${styles.row}`;
-  let row2Column = `pure-u-1-1 ${styles.row}`;
+  let row1Column = `${PureGrid['pure-u-1']} ${styles.row}`;
+  // let row2Column = `pure-u-1-1 ${styles.row}`;
 
   return (
     <div>    
-      <div className={ row2Column }>
+      <div className={ row1Column }>
         <h2 className={ styles.largeText }>a bit about me...</h2>
       </div>
       <div className={ styles.icon }>

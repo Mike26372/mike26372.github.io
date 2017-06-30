@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { TweenMax } from 'gsap';
 
+import PureGrid from '../../../node_modules/purecss/build/grids-responsive-min.css';
+
 import styles from '../../stylesheets/sectionStyles.css';
 import infoStyles from './Info.css';
 
@@ -24,9 +26,9 @@ class Info extends Component {
 
     let containerStyle = `${styles.container} ${styles.darkBackground}`;
     let contentStyle = `${styles.content} ${styles.lightFont}`;
-    let rowsStyle = `pure-g ${styles.rows}`;
-    let rowStyle = `pure-u-1 ${styles.row}`;
-    let row2ColumnsStyle = `pure-u-1 pure-u-md-1-2 ${styles.leftAligned} ${styles.lightFont}`;
+    let rowsStyle = `${PureGrid['pure-g']} ${styles.rows}`;
+    let rowStyle = `${PureGrid['pure-u-1']} ${styles.row}`;
+    let row2ColumnsStyle = `${PureGrid['pure-u-1']} ${PureGrid['pure-u-md-1-2']} ${styles.leftAligned} ${styles.lightFont}`;
     let titleStyle = `${styles.largeText} ${styles.lightFont}`;
 
     let mailIcon = `fa fa-envelope-o ${infoStyles.icon} ${styles.smallIcon}`;

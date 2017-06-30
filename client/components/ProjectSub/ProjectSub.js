@@ -1,14 +1,16 @@
 
 import React from 'react';
 import styles from './ProjectSub.css';
+import PureGrid from '../../../node_modules/purecss/build/grids-responsive-min.css';
+
 
 import svgMapping from '../SVGs/svgMapping.js';
 
 
 const ProjectSub = (props) => {
 
-  let row1Column = `pure-u-1 ${styles.row}`;
-  let row2Columns = `pure-u-1 pure-u-md-1-2 ${styles.row}`;
+  let row1Column = `${PureGrid['pure-u-1']} ${styles.row}`;
+  let row2Columns = `${PureGrid['pure-u-1']} ${PureGrid['pure-u-md-1-2']} ${styles.row}`;
   let { title, description, url, github, style } = props;
 
   //Styles

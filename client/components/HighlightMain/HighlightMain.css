@@ -1,12 +1,14 @@
 .icon {
-  padding: 50px 0;
+  /*padding: 50px 0;*/
+  max-width: 600px;
+  margin: auto;
 }
 
 .largeText {
   font-size: 4em;
   font-style: italic;
   font-family: var(--primary-font); 
-  margin-bottom: 1em;
+  /*margin-bottom: 1em;*/
   text-align: center;
 }
 
