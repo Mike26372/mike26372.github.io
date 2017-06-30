@@ -35,14 +35,6 @@ module.exports = {
       threshold: 0,
       minRatio: 0.8
     }),
-    // new webpack.LoaderOptionsPlugin({
-    //   test: /\.css$/,
-    //   options: {
-    //     postcss: function() {
-    //       return postCSSConfig;
-    //     }
-    //   }
-    // }),
     new webpack.ProvidePlugin({
       'React': 'react',
     }),
@@ -60,17 +52,11 @@ module.exports = {
         loaders: ['babel-loader'],
         include: path.join(__dirname, 'client')
       },
-      // CSS
-      // {
-      //   test: /\.css$/,
-      //   loader: 'style-loader!css-loader?modules&importLoaders=1&localIdentName=[name]---[local]---[hash:base64:5]!postcss-loader'
-      // },
       {
         test: /\.css$/,
         use: ExtractTextPlugin.extract({
           fallback: 'style-loader',
           use: [
-            // 'style-loader',
             { 
               loader: 'css-loader', 
               options: { 

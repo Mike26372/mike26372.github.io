@@ -37,11 +37,11 @@ module.exports = {
       threshold: 0,
       minRatio: 0.8
     }),
-    new ExtractTextPlugin({
-      filename: 'bundle.css',
-      disable: false,
-      allChunks: true
-    })
+    // new ExtractTextPlugin({
+    //   filename: 'bundle.css',
+    //   disable: false,
+    //   allChunks: true
+    // })
 
   ],
   module: {
@@ -54,52 +54,53 @@ module.exports = {
       },
       // CSS
       // ***********WORKING VERSION****************
-      // {
-      //   test: /\.css$/,
-      //   use: [
-      //     'style-loader',
-      //     { 
-      //       loader: 'css-loader', 
-      //       options: { 
-      //         modules: true, 
-      //         importLoaders: 1,
-      //         localIdentName: '[name]---[local]---[hash:base64:5]' 
-      //       } 
-      //     },
-      //     { 
-      //       loader: 'postcss-loader', 
-      //       options: {
-      //         plugins: (loader) => postCSSConfig
-      //       } 
-      //     }
-      //   ],
+      {
+        test: /\.css$/,
+        use: [
+          'style-loader',
+          { 
+            loader: 'css-loader', 
+            options: { 
+              modules: true, 
+              importLoaders: 1,
+              localIdentName: '[name]---[local]---[hash:base64:5]' 
+            } 
+          },
+          { 
+            loader: 'postcss-loader', 
+            options: {
+              plugins: (loader) => postCSSConfig
+            } 
+          }
+        ],
+      },
         // ******************* WEBPACK 1 VERSION *******
         // loader: 'style-loader!css-loader?modules&importLoaders=1&localIdentName=[name]---[local]---[hash:base64:5]!postcss-loader',
         // ******************* TEST VERSION **********
-      {
-        test: /\.css$/,
-        use: ExtractTextPlugin.extract({
-          fallback: 'style-loader',
-          use: [
-            // 'style-loader',
-            { 
-              loader: 'css-loader', 
-              options: { 
-                modules: true, 
-                importLoaders: 1,
-                localIdentName: '[name]---[local]---[hash:base64:5]' 
-              } 
-            },
-            { 
-              loader: 'postcss-loader', 
-              options: {
-                plugins: (loader) => postCSSConfig
-              } 
-            }
-          ],
-          publicPath: '/dist'
-        }) 
-      },
+      // {
+      //   test: /\.css$/,
+      //   use: ExtractTextPlugin.extract({
+      //     fallback: 'style-loader',
+      //     use: [
+      //       // 'style-loader',
+      //       { 
+      //         loader: 'css-loader', 
+      //         options: { 
+      //           modules: true, 
+      //           importLoaders: 1,
+      //           localIdentName: '[name]---[local]---[hash:base64:5]' 
+      //         } 
+      //       },
+      //       { 
+      //         loader: 'postcss-loader', 
+      //         options: {
+      //           plugins: (loader) => postCSSConfig
+      //         } 
+      //       }
+      //     ],
+      //     publicPath: '/dist'
+      //   }) 
+      // },
       // Font-Awesome
       { 
         test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/, 
