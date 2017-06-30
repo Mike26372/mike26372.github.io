@@ -96,14 +96,14 @@
 
 .smallIcon {
   padding: 0 1em;
-  font-size: 2em;
+  font-size: 2em !important;
   /*flex: 0 1 100%;*/
   width: 100px;
   vertical-align: middle !important;
 }
 
 .smallIcon:before {
-  font-size: 2em;
+  /*font-size: 2em;*/
 }
 
 .leftAligned {
