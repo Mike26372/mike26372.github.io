@@ -21,7 +21,7 @@ class Splash extends Component {
     const el = this.container;
     let prevShow = prevProps.show;
     let currShow = this.props.show;
-    console.log(prevShow, currShow);
+    // console.log(prevShow, currShow);
     if (!prevShow && currShow) {
       TweenMax.fromTo(el, 0.3, {y: 100, opacity: 0}, {y: 0, opacity: 1});
     } 
