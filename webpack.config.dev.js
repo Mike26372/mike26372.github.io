@@ -22,14 +22,6 @@ module.exports = {
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoEmitOnErrorsPlugin(),
-    // new webpack.LoaderOptionsPlugin({
-    //   test: /\.css$/,
-    //   options: {
-    //     postcss: () => {
-    //       return postCSSConfig;
-    //     }
-    //   }
-    // }),
     new CompressionPlugin({
       asset: '[path].gz[query]',
       algorithm: 'gzip',
@@ -37,12 +29,6 @@ module.exports = {
       threshold: 0,
       minRatio: 0.8
     }),
-    // new ExtractTextPlugin({
-    //   filename: 'bundle.css',
-    //   disable: false,
-    //   allChunks: true
-    // })
-
   ],
   module: {
     loaders: [
@@ -112,5 +98,8 @@ module.exports = {
       }
     ]
   },
+  stats: {
+    warnings: false
+  }
 };
 
