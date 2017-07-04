@@ -31,8 +31,10 @@ class Splash extends Component {
   }
 
   render() {
+    let { color } = this.props;
+
     return (
-      <section className={styles.container} ref={c => this.container = c}>
+      <section className={styles.container} ref={c => this.container = c} style={ {'background-color': color} }> 
           <div className={styles.splash}>
               <h1 className={styles.splashHead}>michaeltutt.io</h1>
               <p className={styles.splashSubhead}>
