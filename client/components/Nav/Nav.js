@@ -2,6 +2,8 @@
 import React, { Component } from 'react';
 import { CSSTransitionGroup } from 'react-transition-group';
 
+import ColorPicker from '../ColorPicker/ColorPicker.js';
+
 import styles from './Nav.css';
 
 class Nav extends Component {
@@ -26,14 +28,18 @@ class Nav extends Component {
   }
 
   render() {
+    
+    let { updateColor } = this.props;
+
     let menuStyle = `${styles.navMenu} pure-menu pure-menu-horizontal pure-menu-fixed`;
     let titleStyle = `${styles.title} pure-menu-heading`;
-    let transitionClasses = {appear: `${styles.titleAppear}`, appearActive: `${styles.titleAppearActive}`}
+    let transitionClasses = {appear: `${styles.titleAppear}`, appearActive: `${styles.titleAppearActive}`};
     
     return (
       <header className="header">
         <div className={menuStyle}>
-          
+          <ColorPicker 
+          updateColor={updateColor} />
         </div>
       </header>
     )
