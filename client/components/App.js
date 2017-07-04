@@ -2,13 +2,10 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import TransitionGroupPlus from 'react-transition-group-plus';
 import FontAwesomeWebpack from 'font-awesome-webpack';
-// import PureCSS from 'purecss';
-// import PureMin from '../../node_modules/purecss/build/pure-min.css';
-// import PureGridMin from '../../node_modules/purecss/build/grids-min.css';
-// import PureGridResponsiveMin from '../../node_modules/purecss/build/grids-responsive-min.css';
 
 import styles from './App.css';
 
+import ColorPicker from './ColorPicker/ColorPicker.js';
 import Nav from './Nav/Nav.js';
 import Splash from './Splash/Splash.js';
 import Content from './Content/Content.js';
@@ -27,12 +24,14 @@ class App extends Component {
       index: 0,
       height: null,
       width: null,
-      sections: 2
+      sections: 2,
+      color: '#262626'
     };
 
     this.handleScroll = this.handleScroll.bind(this);
     this.handleResize = this.handleResize.bind(this);
     this.toggleShow = this.toggleShow.bind(this);
+    this.updateColor = this.updateColor.bind(this);
   }
 
   componentDidMount() {
@@ -70,15 +69,23 @@ class App extends Component {
   }
 
   toggleShow(e) {
-    this.setState({ show: true })
+    this.setState({ show: true });
+  }
+
+  updateColor(newHex) {
+    // console.log(newHex);
+    this.setState({ color: newHex });
   }
 
   render() {
-    let { show, index } = this.state;
+    let { show, index, color } = this.state;
     return (
       <div>
-        <Nav show={show} toggleShow={this.toggleShow}/>
-        <Splash show={show} />
+        <Nav show={show} 
+        toggleShow={this.toggleShow} 
+        updateColor={this.updateColor}/>
+        <Splash show={show} 
+        color={color}/>
         <About show={show} />
         <Traits show={show} />
         <Tech show={show} />
@@ -94,3 +101,6 @@ export default App;
 // <TransitionGroupPlus transitionMode="out-in">
 //   {show ? windows[index] : ''}
 // </TransitionGroupPlus>
+
+// <ColorPicker show={show} 
+// handleColor={this.handleColor} />
