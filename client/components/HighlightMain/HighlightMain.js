@@ -18,11 +18,11 @@ const HighlightMain = (props) => {
         <FullStackSVG />
       </div>
       <div className={ row1Column }>
-        <p className={ styles.smallText }>I'm Michael Tutt, a full-stack software engineer living in Northern California. </p>
+        <p className={ styles.smallText }>I'm Michael Tutt, a full-stack software engineer living in Northern California</p>
         <p className={ styles.smallText }>
           I develop web applications with significant 
           experience in both the front and back-end, 
-          specializing in meticulously crafted user experiences.
+          specializing in meticulously crafted user experiences
         </p>
         <p></p>
       </div>
