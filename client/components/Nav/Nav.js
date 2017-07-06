@@ -5,6 +5,7 @@ import { CSSTransitionGroup } from 'react-transition-group';
 import ColorPicker from '../ColorPicker/ColorPicker.js';
 
 import styles from './Nav.css';
+import PureGrid from '../../../node_modules/purecss/build/grids-responsive-min.css';
 
 class Nav extends Component {
   constructor() {
@@ -30,16 +31,16 @@ class Nav extends Component {
   render() {
     
     let { updateColor } = this.props;
-
+    // UPDATE FOR PURECSS MODULES
+    let headerStyle = `${styles.headerStyle} header`;
     let menuStyle = `${styles.navMenu} pure-menu pure-menu-horizontal pure-menu-fixed`;
     let titleStyle = `${styles.title} pure-menu-heading`;
     let transitionClasses = {appear: `${styles.titleAppear}`, appearActive: `${styles.titleAppearActive}`};
     
     return (
-      <header className="header">
+      <header className={headerStyle}>
         <div className={menuStyle}>
-          <ColorPicker 
-          updateColor={updateColor} />
+          
         </div>
       </header>
     )
@@ -47,6 +48,9 @@ class Nav extends Component {
 }
 
 export default Nav;
+
+// <ColorPicker 
+// updateColor={updateColor} />
 
 // <ul className="pure-menu-list">
 //     <li className="pure-menu-item pure-menu-selected"><a href="#" className="pure-menu-link"></a></li>
