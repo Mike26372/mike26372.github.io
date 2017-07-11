@@ -8,6 +8,7 @@ body, div, input {
   height: 100vh;
   opacity: 0;
   display: flex;
+  background-color: #262626 !important;
   background-color: var(--base) !important;
 }
 
@@ -21,6 +22,7 @@ body, div, input {
 }
 
 .splashHead {
+  font-family: 'Playfair Display', sans-serif;
   font-family: var(--primary-font);
   font-size: 12vw;
   font-weight: 300;
@@ -35,14 +37,18 @@ body, div, input {
   letter-spacing: 0.05em;
   font-size: 1.5em;
   margin-top: 0;
+  max-width: 90%;
+  margin: auto;
 }
 
 .resume {
   text-transform: none;
   text-decoration: none;
-  color: var(--light-grey);
+  color: #778899;
+  color: var(--blue-grey);
 }
 
 .resume:hover {
-  color: var(--whitish);
+  color: #dcdcdc;
+  color: var(--light-grey);
 }
