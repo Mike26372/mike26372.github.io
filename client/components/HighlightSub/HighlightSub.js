@@ -1,3 +1,4 @@
+import genStyles from '../../stylesheets/sectionStyles.css';
 import styles from './HighlightSub.css';
 import PureGrid from '../../../node_modules/purecss/build/grids-responsive-min.css';
 
@@ -12,7 +13,7 @@ const HighlightSub = (props) => {
   return (
     <div>
       <div className={titleStyle}> 
-        <h2 className={styles.largeText}>how I work...</h2>
+        <h2 className={genStyles.largeText}>how I work...</h2>
       </div>
       {highlights.map(hl => <Highlight title={hl.title} text={hl.text} icon={hl.icon} />)}
     </div>
