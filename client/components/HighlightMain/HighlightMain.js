@@ -1,3 +1,4 @@
+import genStyles from '../../stylesheets/sectionStyles.css';
 import styles from './HighlightMain.css';
 
 import FullStackSVG from '../SVGs/FullStackSVG/FullStackSVG.js';
@@ -12,17 +13,17 @@ const HighlightMain = (props) => {
   return (
     <div>    
       <div className={ row1Column }>
-        <h2 className={ styles.largeText }>a bit about me...</h2>
+        <h2 className={ genStyles.largeText }>a bit about me...</h2>
       </div>
       <div className={ styles.icon }>
         <FullStackSVG />
       </div>
       <div className={ row1Column }>
-        <p className={ styles.smallText }>I'm Michael Tutt, a full-stack software engineer living in Northern California</p>
+        <p className={ styles.smallText }>I'm Michael Tutt, a full-stack software engineer living in Northern California.</p>
         <p className={ styles.smallText }>
           I develop web applications with significant 
           experience in both the front and back-end, 
-          specializing in meticulously crafted user experiences
+          specializing in meticulously crafted user experiences.
         </p>
         <p></p>
       </div>
