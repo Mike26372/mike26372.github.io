@@ -37,8 +37,6 @@ class App extends Component {
   componentDidMount() {
     window.addEventListener('scroll', this.handleScroll);
     window.addEventListener('resize', this.handleResize);
-    // set scrollTop to zero? Moves back to top of page
-    // window.scrollTo(0, 0);
     let { innerHeight, innerWidth } = window;
     this.setState({ height: innerHeight, width: innerWidth });
   }
@@ -73,7 +71,6 @@ class App extends Component {
   }
 
   updateColor(newHex) {
-    // console.log(newHex);
     this.setState({ color: newHex });
   }
 
@@ -98,9 +95,3 @@ class App extends Component {
 
 export default App;
 
-// <TransitionGroupPlus transitionMode="out-in">
-//   {show ? windows[index] : ''}
-// </TransitionGroupPlus>
-
-// <ColorPicker show={show} 
-// handleColor={this.handleColor} />
