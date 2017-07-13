@@ -1,0 +1,72 @@
+/* Color Picker Styles */
+
+.colorPicker {
+  z-index: 9;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: rgba(63, 63, 63, 1);
+  background-color: var(--secondhand-grey);
+  border: 1px solid #f5f5f5;
+  border: 1px solid var(--whitish);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: .5em;
+  transition: all .2s;
+}
+
+.colorInput {
+  background-color: transparent;
+  border: 1px solid grey;
+  color: transparent;
+  display: transparent;
+  outline: none;
+}
+
+.colorInput:focus {
+  outline: none;
+}
+
+.colorLabel {
+
+} 
+
+.colorLabel:before {
+  height: 50px;
+  width: 50px;
+  content: '\f1fc';
+  color: white;
+  font-size: 2em;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.text {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-family: var(--secondary-font);
+  font-weight: 100;
+  padding: .5em 0;
+}
+
+.icon {
+  color: #f5f5f5;
+  color: var(--whitish);
+}
+
+.iconContainer {
+  padding: 0 0.5em;
+}
+
+.undo {
+  font-size: 2em;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.caret {
+  font-size: 1.2em;
+}
