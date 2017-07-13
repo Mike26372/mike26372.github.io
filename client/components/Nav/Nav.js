@@ -5,6 +5,7 @@ import { CSSTransitionGroup } from 'react-transition-group';
 import ColorPicker from '../ColorPicker/ColorPicker.js';
 
 import styles from './Nav.css';
+import Pure from '../../../node_modules/purecss/build/pure-min.css';
 import PureGrid from '../../../node_modules/purecss/build/grids-responsive-min.css';
 
 class Nav extends Component {
@@ -33,14 +34,15 @@ class Nav extends Component {
     let { updateColor } = this.props;
     // UPDATE FOR PURECSS MODULES
     let headerStyle = `${styles.headerStyle} header`;
-    let menuStyle = `${styles.navMenu} pure-menu pure-menu-horizontal pure-menu-fixed`;
+    let menuStyle = `${styles.navMenu}`;
     let titleStyle = `${styles.title} pure-menu-heading`;
-    let transitionClasses = {appear: `${styles.titleAppear}`, appearActive: `${styles.titleAppearActive}`};
+    // let transitionClasses = {appear: `${styles.titleAppear}`, appearActive: `${styles.titleAppearActive}`};
     
     return (
       <header className={headerStyle}>
         <div className={menuStyle}>
-          
+          <ColorPicker 
+          updateColor={updateColor} />
         </div>
       </header>
     )
@@ -48,19 +50,3 @@ class Nav extends Component {
 }
 
 export default Nav;
-
-// <ColorPicker 
-// updateColor={updateColor} />
-
-// <ul className="pure-menu-list">
-//     <li className="pure-menu-item pure-menu-selected"><a href="#" className="pure-menu-link"></a></li>
-//     <li className="pure-menu-item"><a href="#" className="pure-menu-link"></a></li>
-//     <li className="pure-menu-item"><a href="#" className="pure-menu-link"></a></li>
-// </ul>
-
-// <CSSTransitionGroup
-// transitionAppear={true}
-// transitionAppearTimeout={1000}
-// transitionName={ transitionClasses }>
-//   <a className={titleStyle} href="" ref={c => this.title = c}>michaeltutt.io</a>
-// </CSSTransitionGroup>
