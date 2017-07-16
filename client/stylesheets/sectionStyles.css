@@ -93,9 +93,9 @@
   vertical-align: middle !important;
 }
 
-.smallIcon:before {
+/* .smallIcon:before {
 
-}
+} */
 
 .leftAligned {
   text-align: left;
