@@ -1,4 +1,3 @@
-# React Development Boilerplate
+# Personal Website / Online Resume Repo
 
-Boilerplate file structure for the creation of React applications.
-
+Repository for my online resume site michaeltutt.io
