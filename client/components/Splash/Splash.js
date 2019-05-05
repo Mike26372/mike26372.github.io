@@ -38,7 +38,7 @@ class Splash extends Component {
           <div className={styles.splash}>
               <h1 className={styles.splashHead}>michaeltutt.io</h1>
               <p className={styles.splashSubhead}>
-                scroll down or just <a className={styles.resume} href="https://drive.google.com/file/d/0B9bs3mf0dai2TlliMk9COXl2bjQ/view?usp=sharing" target="_blank">view my resume</a>
+                scroll down or just <a className={styles.resume} href="https://drive.google.com/file/d/0B9bs3mf0dai2M1NfaFZxOF93SlU/view?usp=sharing" target="_blank">view my resume</a>
               </p>
           </div>
       </section>

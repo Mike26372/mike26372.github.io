@@ -64,7 +64,7 @@ class Info extends Component {
                 <i className={angelListIcon} aria-hidden="true"></i>
                 <span className={infoStyle}>AngelList</span> 
               </a>
-              <a className={infoContainerStyle} href="https://drive.google.com/file/d/0B9bs3mf0dai2TlliMk9COXl2bjQ/view?usp=sharing" target="_blank">
+              <a className={infoContainerStyle} href="https://drive.google.com/file/d/0B9bs3mf0dai2M1NfaFZxOF93SlU/view?usp=sharing" target="_blank">
                 <i className={documentIcon} aria-hidden="true"></i>
                 <span className={infoStyle}>View My Résumé</span> 
               </a>

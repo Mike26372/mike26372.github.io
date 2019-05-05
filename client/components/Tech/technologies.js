@@ -1,20 +1,20 @@
 var technologies = [
   {
     title: 'Languages', 
-    mainSkills: ['JavaScript (ES6)', 'HTML', 'CSS'], 
-    subSkills: ['Git', 'SQL'], 
+    mainSkills: ['JavaScript', 'GraphQL', 'HTML/CSS'], 
+    subSkills: ['Git', 'SQL', 'Golang'], 
     icon: 'Language'
   },
   {
     title: 'Front-End', 
-    mainSkills: ['React', 'Angular', 'Backbone'], 
-    subSkills: ['JQuery', 'Bootstrap', 'Materialize'], 
+    mainSkills: ['React', 'Angular', 'Vue'], 
+    subSkills: ['Backbone', 'JQuery', 'Bootstrap'], 
     icon: 'FrontEnd'
   },
   {
     title: 'Back-End / Server-Side', 
-    mainSkills: ['NodeJS', 'ExpressJS'], 
-    subSkills: [ ], 
+    mainSkills: ['NodeJS', 'Koa', 'Express.js'], 
+    subSkills: ['FusionJS'], 
     icon: 'BackEnd'
   },
   {
@@ -25,7 +25,7 @@ var technologies = [
   },
   {
     title: 'Tools / Testing', 
-    mainSkills: ['Redux', 'Webpack', 'Mocha / Chai'], 
+    mainSkills: ['Redux', 'Webpack', 'Enzyme/Jest'], 
     subSkills: ['Babel', 'Grunt', 'Gulp'], 
     icon: 'Tool'
   }
