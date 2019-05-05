@@ -77,11 +77,6 @@ class App extends Component {
     let { show, index, color } = this.state;
     return (
       <div>
-        <Nav
-          show={show}
-          toggleShow={this.toggleShow}
-          updateColor={this.updateColor}
-        />
         <Splash show={show} color={color} />
         <About show={show} />
         <Traits show={show} />
@@ -94,3 +89,10 @@ class App extends Component {
 }
 
 export default App;
+
+// TODO: Finish navbar color picker
+// <Nav
+//   show={show}
+//   toggleShow={this.toggleShow}
+//   updateColor={this.updateColor}
+// />
