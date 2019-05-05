@@ -12,7 +12,7 @@ var projects = [
     title: 'Bento',
     description:
       'A lightweight, efficient and customizable productivity dashboard',
-    url: 'http://www.bentoboard.co',
+    url: '',
     github: 'https://github.com/HR-Dwarves/Bento',
     style: {
       color: colors['whitish'],
