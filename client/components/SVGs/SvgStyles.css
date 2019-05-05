@@ -1,5 +1,5 @@
 .container {
-  max-width: 700px
+  max-width: 700px;
 }
 
 .large {
@@ -30,7 +30,8 @@
 }
 
 @keyframes blink {
-  from, to {
+  from,
+  to {
     opacity: 0;
   }
   50% {
@@ -39,7 +40,8 @@
 }
 
 @keyframes rotation {
-  from, to {
+  from,
+  to {
     transform: rotate(0deg);
   }
   50% {

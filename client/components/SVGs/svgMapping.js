@@ -1,4 +1,3 @@
-
 import Lightbulb from './LightbulbSVG/LightbulbSVG.js';
 import Computer from './ComputerSVG/ComputerSVG.js';
 import Design from './DesignSVG/DesignSVG.js';
@@ -11,19 +10,18 @@ import Database from './DatabaseSVG/DatabaseSVG.js';
 import Tool from './ToolSVG/ToolSVG.js';
 import Brain from './BrainSVG/BrainSVG.js';
 
-
 const svgMapping = {
-  'Computer': Computer,
-  'Spedometer': Spedometer,
-  'Design': Design,
-  'Lightbulb': Lightbulb,
-  'FullStack': FullStack,
-  'FrontEnd' : FrontEnd,
-  'BackEnd': BackEnd,
-  'Language': Language,
-  'Database': Database,
-  'Tool': Tool,
-  'Brain': Brain,
+  Computer: Computer,
+  Spedometer: Spedometer,
+  Design: Design,
+  Lightbulb: Lightbulb,
+  FullStack: FullStack,
+  FrontEnd: FrontEnd,
+  BackEnd: BackEnd,
+  Language: Language,
+  Database: Database,
+  Tool: Tool,
+  Brain: Brain
 };
 
 export default svgMapping;

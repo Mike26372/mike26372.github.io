@@ -24,14 +24,13 @@ class Projects extends Component {
   // }
 
   render() {
-
-    let containerStyle = `${styles.container} ${styles.lightBackground}`
+    let containerStyle = `${styles.container} ${styles.lightBackground}`;
     let rowsStyle = `${PureGrid['pure-g']} ${styles.rows}`;
     let rowStyle = `${PureGridRes['pure-u-1']} ${styles.row}`;
     let titleStyle = `${styles.largeText}`;
 
     return (
-      <section className={containerStyle} ref={ c => this.container = c }>
+      <section className={containerStyle} ref={c => (this.container = c)}>
         <div className={styles.content}>
           <div className={rowsStyle}>
             <div className={rowStyle}>
@@ -39,10 +38,14 @@ class Projects extends Component {
             </div>
           </div>
           <div className={rowsStyle}>
-            {projectInfo.slice(0,2).map(project => React.createElement(ProjectSub, {...project}))}
+            {projectInfo
+              .slice(0, 2)
+              .map(project => React.createElement(ProjectSub, { ...project }))}
           </div>
           <div className={rowsStyle}>
-            {projectInfo.slice(2).map(project => React.createElement(ProjectSub, {...project}))}
+            {projectInfo
+              .slice(2)
+              .map(project => React.createElement(ProjectSub, { ...project }))}
           </div>
         </div>
       </section>

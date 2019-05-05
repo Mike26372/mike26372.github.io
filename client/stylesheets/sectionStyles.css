@@ -49,12 +49,12 @@
 }
 
 .largeText {
-  font-family: 'Playfair Display', sans-serif; 
+  font-family: 'Playfair Display', sans-serif;
   font-family: var(--primary-font);
   font-size: 4em;
   font-style: italic;
   margin-bottom: 1em;
-  margin: .5em 0;
+  margin: 0.5em 0;
   text-align: center;
   letter-spacing: normal;
 }
@@ -83,7 +83,6 @@
 .infoContainer:hover {
   color: #778899;
   color: var(--blue-grey);
-
 }
 
 .smallIcon {
@@ -100,4 +99,3 @@
 .leftAligned {
   text-align: left;
 }
-

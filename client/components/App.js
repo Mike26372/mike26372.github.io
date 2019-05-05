@@ -18,7 +18,7 @@ import Info from './Info/Info.js';
 class App extends Component {
   constructor() {
     super();
-    
+
     this.state = {
       show: false,
       index: 0,
@@ -56,14 +56,13 @@ class App extends Component {
     let totalHeight = sections * height;
     let newIndex = Math.floor((scrollTop / totalHeight) * sections);
     if (newIndex !== index) {
-      this.setState({ index: newIndex }); 
+      this.setState({ index: newIndex });
     }
-
   }
 
   handleResize(e) {
     let { innerWidth, innerHeight } = window;
-    this.setState( {height: innerHeight, width: innerWidth });
+    this.setState({ height: innerHeight, width: innerWidth });
   }
 
   toggleShow(e) {
@@ -78,20 +77,20 @@ class App extends Component {
     let { show, index, color } = this.state;
     return (
       <div>
-        <Nav show={show} 
-        toggleShow={this.toggleShow} 
-        updateColor={this.updateColor}/>
-        <Splash show={show} 
-        color={color}/>
+        <Nav
+          show={show}
+          toggleShow={this.toggleShow}
+          updateColor={this.updateColor}
+        />
+        <Splash show={show} color={color} />
         <About show={show} />
         <Traits show={show} />
         <Tech show={show} />
         <Projects show={show} />
         <Info show={show} />
       </div>
-    )
+    );
   }
 }
 
 export default App;
-

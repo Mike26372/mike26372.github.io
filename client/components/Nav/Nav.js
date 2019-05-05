@@ -1,4 +1,3 @@
-
 import React, { Component } from 'react';
 import { CSSTransitionGroup } from 'react-transition-group';
 
@@ -30,22 +29,20 @@ class Nav extends Component {
   }
 
   render() {
-    
     let { updateColor } = this.props;
     // UPDATE FOR PURECSS MODULES
     let headerStyle = `${styles.headerStyle} header`;
     let menuStyle = `${styles.navMenu}`;
     let titleStyle = `${styles.title} pure-menu-heading`;
     // let transitionClasses = {appear: `${styles.titleAppear}`, appearActive: `${styles.titleAppearActive}`};
-    
+
     return (
       <header className={headerStyle}>
         <div className={menuStyle}>
-          <ColorPicker 
-          updateColor={updateColor} />
+          <ColorPicker updateColor={updateColor} />
         </div>
       </header>
-    )
+    );
   }
 }
 
