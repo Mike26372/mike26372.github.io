@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import _ from 'underscore';
 
 import styles from './ColorPicker.css';
-import PureGrid from '../../../node_modules/purecss/build/grids-responsive-min.css';
 
 class ColorPicker extends Component {
   
@@ -26,7 +25,6 @@ class ColorPicker extends Component {
   handleColor(e) {
     console.log(e.target.value);
     document.documentElement.style.setProperty(`--base`, e.target.value);
-    // this.input.setProperty('value', e.target.value);
   }
 
   handleClick() {
